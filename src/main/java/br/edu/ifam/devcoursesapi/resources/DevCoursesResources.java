@@ -1,18 +1,28 @@
 package br.edu.ifam.devcoursesapi.resources;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(value = "/")
 public class DevCoursesResources {
-    @RequestMapping(value= "/devcourses", method = RequestMethod.GET)
+    @GetMapping
     public String GETResponse(){
         return "Coleção de Cursos na Área de Desenvolvimento de Software - get";
     }
-    @RequestMapping(value= "/devcourses", method = RequestMethod.POST)
+    @PostMapping
     public String POSTResponse(){
         return "Coleção de Cursos na Área de Desenvolvimento de Software - post";
     }
+    @DeleteMapping
+    public String DELETEResponse(){
+        return "Coleção de Cursos na Área de Desenvolvimento de Software - delete";
+    }
+
+    @PutMapping
+    public String PUTResponse(){
+        return "Coleção de Cursos na Área de Desenvolvimento de Software - put";
+    }
+
+
 
 }
