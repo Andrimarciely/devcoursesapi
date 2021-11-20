@@ -7,8 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevCoursesResources {
     @RequestMapping(value= "/devcourses", method = RequestMethod.GET)
-    public String toList(){
-        return "Coleção de Cursos na Área de Desenvolvimento de Software";
+    public String GETResponse(){
+        return "Coleção de Cursos na Área de Desenvolvimento de Software - get";
+    }
+    @RequestMapping(value= "/devcourses", method = RequestMethod.POST)
+    public String POSTResponse(){
+        return "Coleção de Cursos na Área de Desenvolvimento de Software - post";
     }
 
 }
