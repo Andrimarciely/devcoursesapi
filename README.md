@@ -1,5 +1,5 @@
 # devcoursesapi
-Development of an API with a collection of courses in development of software.
+Development of an API with a collection of courses in software development.
 
 This is an evaluation activity of the FIC/Aranouá Spring Boot course
 
