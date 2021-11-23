@@ -1,6 +1,6 @@
 package br.edu.ifam.devcoursesapi.model;
 
-public class DevCourses {
+public class Courses{
     private  long id;
     private  String nameCompany;
    /*
@@ -10,10 +10,11 @@ public class DevCourses {
     private  String link;
    */
 
-    public DevCourses() {
+
+    public Courses() {
     }
 
-    public DevCourses(long id, String nameCompany){
+    public Courses(long id, String nameCompany){
         super();
         this.id = id;
         this.nameCompany = nameCompany;
